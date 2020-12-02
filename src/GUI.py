@@ -1,4 +1,4 @@
-from API import *
+from src.API import *
 
 import tkinter as tk
 import tkinter.scrolledtext as tkscrolled
@@ -39,7 +39,7 @@ class ChangeAuth:
         config["USER DATA"]["auth_email"] = self.email.get()
         config["USER DATA"]["auth_password"] = self.pw.get()
 
-        with open('config.ini', 'w') as configfile:  # save
+        with open('../config.ini', 'w') as configfile:  # save
             config.write(configfile)
 
         print(f"updated user data with email - {config['USER DATA']['auth_email']}, pw - {config['USER DATA']['auth_password']}")

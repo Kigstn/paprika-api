@@ -1,5 +1,5 @@
-from GUI import *
-from API import get_token
+from src.GUI import *
+from src.API import get_token
 
 import tkinter as tk
 
